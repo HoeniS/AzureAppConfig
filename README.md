@@ -1,0 +1,1 @@
+Simple ASP.NET Core App with feature flags from the Azure App Configuration according to following MS documentation: https://docs.microsoft.com/de-de/azure/azure-app-configuration/quickstart-feature-flag-aspnet-core
