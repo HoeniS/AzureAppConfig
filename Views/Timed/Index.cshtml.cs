@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 
-namespace TestFeatureFlags.Views.Gamma
+namespace TestFeatureFlags.Views.Timed
 {
     public class IndexModel : PageModel
     {

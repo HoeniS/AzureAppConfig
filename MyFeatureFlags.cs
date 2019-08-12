@@ -8,6 +8,8 @@ namespace TestFeatureFlags
     public enum MyFeatureFlags
     {
         Beta,
-        Gamma
+        Random,
+        Timed,
+        Premium
     }
 }

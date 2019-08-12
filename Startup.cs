@@ -10,6 +10,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.FeatureManagement;
+using Microsoft.FeatureManagement.FeatureFilters;
 
 namespace TestFeatureFlags
 {
@@ -35,6 +36,8 @@ namespace TestFeatureFlags
 
 
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
+            services.AddFeatureManagement().AddFeatureFilter<PercentageFilter>();
+            services.AddFeatureManagement().AddFeatureFilter<TimeWindowFilter>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

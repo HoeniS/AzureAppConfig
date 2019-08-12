@@ -4,16 +4,16 @@ using Microsoft.FeatureManagement.Mvc;
 
 namespace TestFeatureFlags.Controllers
 {
-    public class GammaController: Controller
+    public class TimedController: Controller
     {
         private readonly IFeatureManager _featureManager;
 
-        public GammaController(IFeatureManagerSnapshot featureManager)
+        public TimedController(IFeatureManagerSnapshot featureManager)
         {
             _featureManager = featureManager;
         }
 
-        [FeatureGate(MyFeatureFlags.Gamma)]
+        [FeatureGate(MyFeatureFlags.Timed)]
         public IActionResult Index()
         {
             return View();
